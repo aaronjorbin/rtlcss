@@ -42,5 +42,16 @@ module.exports = [
         'processors': []
       }
     ]
+  },
+  {
+    'should': 'Should allow plugins without directives',
+    'expected': 'div { text-align:right;}',
+    'input': 'div { text-align:right;}',
+    'plugins': [
+      {
+        'name': 'rtlcss-no-directives',
+        'processors': []
+      }
+    ]
   }
 ]
